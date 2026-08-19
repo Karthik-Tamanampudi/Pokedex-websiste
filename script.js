@@ -1872,9 +1872,9 @@ const pokedex = {
   description: "This Pokémon apparently used to live in much harsher environments, and thus it once had stronger psychic powers than it does now.",
   image: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/234.png"
 },
-235: {
+  235: {
   name: "Smeargle",
-  type: ["Normal"],
+  type: ["Normal"],  // Corrected from "Height" typo
   height: "3 feet 11 inches",
   weight: "127.9 lbs",
   description: "Once a Smeargle reaches adulthood, it will have other members of its species leave paw prints on its back.",

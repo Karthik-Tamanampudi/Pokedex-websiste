@@ -1874,7 +1874,7 @@ const pokedex = {
 },
 235: {
   name: "Smeargle",
-  type: ["Normal"],  // Corrected from "Height" typo
+  type: ["Normal"],
   height: "3 feet 11 inches",
   weight: "127.9 lbs",
   description: "Once a Smeargle reaches adulthood, it will have other members of its species leave paw prints on its back.",

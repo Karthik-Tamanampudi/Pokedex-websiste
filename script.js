@@ -8279,6 +8279,7 @@ const pokedex = {
 };
 
 // 2️⃣ Function that runs when user clicks "Search"
+// 2️⃣ Function that runs when user clicks "Search"
 function searchPokemon() {
   const num = document.getElementById("dexNumber").value;
   const p = pokedex[num];
@@ -8286,7 +8287,11 @@ function searchPokemon() {
 
   document.getElementById("pokeImage").src = p.image;
   document.getElementById("name").textContent = "Name: " + p.name;
-  document.getElementById("type").textContent = "Type: " + p.type.join(", ");
+  
+  // This builds the type badges using your CSS classes (.grass, .fire, etc.)
+  const typeContainer = document.getElementById("type");
+  typeContainer.innerHTML = "Type: " + p.type.map(t => `<span class="type ${t.toLowerCase()}">${t}</span>`).join(" ");
+
   document.getElementById("height").textContent = "Height: " + p.height;
   document.getElementById("weight").textContent = "Weight: " + p.weight;
   document.getElementById("description").textContent = p.description;
